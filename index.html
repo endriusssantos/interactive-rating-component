@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Interactive Rating Component</title>
+
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="card1" id="card1">
+            <div class="star-circle">
+                <img src="./src/images/icon-star.svg" alt="star" class="star">
+            </div>
+            <div class="content">
+                <h2 class="title">How did we do?</h2>
+                <p class="text">Please let us know how we did with your support request. All feedback is appreciated
+                    to help us improve our offering!</p>
+            </div>
+            <div class="circles">
+                <ul class="circles-list">
+                    <button class="btn">
+                        <li class="number">1</li>
+                    </button>
+                    <button class="btn">
+                        <li class="number">2</li>
+                    </button>
+                    <button class="btn">
+                        <li class="number">3</li>
+                    </button>
+                    <button class="btn">
+                        <li class="number">4</li>
+                    </button>
+                    <button class="btn">
+                        <li class="number">5</li>
+                    </button>
+                </ul>
+            </div>
+            <div class="button">
+                <button class="btn" onclick="showCard('card2')">Submit</button>
+            </div>
+        </div>
+        <div class="card2 hidden" id="card2">
+            <div class="content">
+                <div class="image">
+                    <img src="./src/images/illustration-thank-you.svg" alt="thank you image" class="thankYou">
+                </div>
+                <div class="selection-card">
+                    <p class="selected"></p>
+                </div>
+                <div class="texts">
+                    <h2 class="title">Thank You!</h2>
+                    <p class="text">We appreciate you taking the time to give a rating. If you ever need more support,
+                        don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

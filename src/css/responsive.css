@@ -1,0 +1,15 @@
+@media (max-width: 425px) {
+    .container .card1 {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .container .card2 {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .container .card2 .texts .text {
+        width: 320px;
+    }
+}
